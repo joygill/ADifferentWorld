@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Millimetre Bold;
+    src: url(millimetre-bold.otf);
+}
+
+@font-face {
+    font-family: Millimetre Regular;
+    src: url(millimetre-regular.otf);
+}
+
+div.progress{
+
+  position: fixed;
+  top:0;
+  left:0;
+  height: 24px;
+
+  /* z-index to keep progress bar above oter elements*/ 
+  z-index: 1;
+
+  background: /* skyblue #82D9FA*/ #96DFFA ;
+}
+
+/* original cover image header */
+/* header {
+  
+
+  background-image: url(jessica-pettway_1-guide-to-happiness.jpg); 
+   
+  background-color: magenta; 
+	background-size: cover;
+  background-position: center;
+	height: 100vh;  
+	width : 100vw;
+  
+  display: flex;
+	align-items: stretch;
+	justify-content: center;
+} */
+
+/* Setting up Text-Based Header */
+
+header {
+  
+
+  /* background-image: url(jessica-pettway_1-guide-to-happiness.jpg); */
+   
+  background-color: magenta; 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;  
+  width : 100vw;
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Commenting out logot styling for now, needs to go on card after intro page /
+
+header img 
+{
+/* Give SVG Image a Size /
+ width: 80%; 
+ height: 80%; 
+/* Add an object fit to prevent streching or cropping in other sizes /
+object-fit: contain;
+}
+*/
+
+body {
+	font-family: Millimetre Regular;
+	font-size: 16px;
+	line-height: 1.5;
+
+	/* background-color: rgba(168, 0, 168, 0.38); */
+  background-image: linear-gradient(90deg, coral,rgba(168, 0, 168, 0.38) );
+	color: #000000;
+  /* Cutting out SuperHi CSS Boiler PLate */
+  /*	
+	margin: 40px auto 40px auto;
+	width: 620px;  
+  */
+}
+
+
+
+section {
+  display: flex;
+  flex-direction: row; 
+}
+
+section:nth-child(odd){
+  flex-direction: row-reverse;
+  
+}
+
+section div {
+	width: 50%;
+}
+
+/* top section with main info is 100% */
+section div.head {
+  width: 100%;
+}
+
+section div.text{
+  padding: 60px; 
+}
+
+
+  h1.intro { font-size: 40px;}
+  h2.intro { font-size:32px;}
+  ul.intro { font-size: 24px;}
+
+
+section div.full-image{
+  height: 100vh;
+  
+	background-size: cover;
+  background-position: center;
+
+	/* Make Image sticky + backup for older browser */
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+/* Override the image link from parent but keep the image styling without having to rewrite each time  -- Very Efficient */
+
+section div.image-1{
+  background-image: url(fromhereonout.jpg);
+}
+
+section div.image-2{
+  background-image: url(differentworld.gif);
+}
+
+section div.image-3{
+  background-image: url(djkid_glucose.png);
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+@media (max-width:800px){
+  body {
+    font-size: 16px;
+  }
+  
+  h2 {
+    font-size: 32px ;
+  }
+
+  header {
+    /* Make height 75% of width of the browser*/
+    height: 75vw;
+  }
+
+  section {
+	display: block;
+		}
+  
+  section div {
+	width: 100%;  
+  }
+
+  section div.text {
+    padding: 30px; 
+  }
+
+  section div.full-image{
+	/* Image height is 100% of the browsers width */
+    height:100vw;
+    
+  }
+}
