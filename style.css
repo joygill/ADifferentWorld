@@ -18,6 +18,8 @@ overflow: hidden;
 
 background-color: rgb(134, 245, 247);
 
+
+
 /* commenting out typography right now  
 line-height: 1.5;
 font-size:14px;
@@ -311,6 +313,13 @@ section div.image-1{
 
 @media (max-width: 900px){
 
+  body{
+
+    border: double 20px rgb(255, 5, 255);
+    background-color: rgb(134, 245, 247);
+    margin: 0;
+  }
+
   div {
    /* Make height 75% of width of the browser 
     width: 100vw; */
@@ -333,6 +342,11 @@ section div.image-1{
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+}
+
+  p{
+
+  margin: 0px;
 }
   div.toptext {
     /*
@@ -367,14 +381,14 @@ section div.image-1{
 
   object-fit: cover;
   object-position: center;
-
-  height: 
+  border-bottom: solid 5px rgb(255, 5, 255);
 
   
   }
 
 #pic{
   max-width: 100vw;
+
 
 
 }
