@@ -314,9 +314,9 @@ section div.image-1{
 @media (max-width: 900px){
 
   body{
-
-    border: double 20px rgb(255, 5, 255);
     background-color: rgb(134, 245, 247);
+    border: double 20px rgb(255, 5, 255);
+    
     margin: 0;
   }
 
@@ -325,7 +325,7 @@ section div.image-1{
     width: 100vw; */
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 5, 255);
+    
 
     
   }
