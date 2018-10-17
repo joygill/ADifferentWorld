@@ -16,7 +16,7 @@ font-family: Millimetre Regular;
 /* adding overflow hidden to get rid of scroll bar */
 overflow: hidden;
 
-background-color: aqua;
+background-color: rgb(134, 245, 247);
 
 /* commenting out typography right now  
 line-height: 1.5;
@@ -316,7 +316,7 @@ section div.image-1{
     width: 100vw; */
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: rgb(255, 5, 255);
 
     
   }
