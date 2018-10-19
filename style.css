@@ -25,9 +25,11 @@ body{
 font-family: Millimetre ;
 
 /* adding overflow hidden to get rid of scroll bar */
-overflow: hidden;
+
 
 background-color: rgb(134, 245, 247);
+overflow: hidden;
+
 
 
 
@@ -157,7 +159,7 @@ div.toptext{
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-style: bold;
@@ -192,7 +194,7 @@ h3 {
 
 li.address{
 
-  font-size: 30px;
+  font-size: 15px;
 }
 
 header ul{
@@ -214,8 +216,8 @@ header ul{
 
 ul li{
 
-    font-size: 35px;
-    margin-bottom: 20px;
+   
+  margin-bottom: 10px;
   letter-spacing: 3px;
   font-weight: bold;
   text-transform: uppercase;
@@ -223,27 +225,33 @@ ul li{
 
   
 }
-ul li.artists{
-  
-  margin:0px;
+ul.artists{
+  font-size: 25px;
+  margin-top:15px;
   text-decoration: none;
 }
 
+
+
+ul.show-details{
+
+  font-size: 20px;
+  margin-top:5px;
+  text-decoration: none;
+}
 
 
 a{
   
    color: deeppink;
     text-decoration-color: darkblue;
-    transition: color text-decoration-color 0.2s;
+    transition: color 0.2s;
+   
 }
 
 a:hover{
   color: darkblue;
     text-decoration-color:deeppink;
-  
-
- 
   
 }
 /* styling for artist list + info 
@@ -372,14 +380,14 @@ section div.image-1{
   }
 
   h1{
-     font-size: 30px;
+     font-size: 26px;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
   
    h3{
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
