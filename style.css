@@ -317,8 +317,7 @@ section div.image-1{
 }
 #pic.p4 {
   background-image: url(images/steel.jpg);
-  transform: rotate(90deg);
-}
+  }
 
 #pic.p5 {
   background-image: url(images/spence.jpg);
