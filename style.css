@@ -3,9 +3,17 @@
 }
 
 @font-face {
-    font-family: Millimetre Regular;
+    font-family: Millimetre ;
     src: url(millimetre-regular.otf);
 }
+
+@font-face {
+    font-family: Millimetre;
+    src: url(millimetre-bold.otf);
+    font-weight:bold;  
+}
+
+
 
 html{
 
@@ -14,7 +22,7 @@ html{
 
 body{
 
-font-family: Millimetre Regular;
+font-family: Millimetre ;
 
 /* adding overflow hidden to get rid of scroll bar */
 overflow: hidden;
@@ -141,7 +149,7 @@ div.toptext{
  /* adding some padding 
  so that our text isn't right on the page */
  padding-left: 20px; 
-
+ border-right: double rgba(255, 5, 255) 25px;
 
 
 }
@@ -188,11 +196,13 @@ header ul{
   */
 }
 
-ul li{
+ul li.artists{
   /*
 
   margin: 5px 0 0 0;
+
   */
+  text-decoration: none
 }
 
 
@@ -307,6 +317,7 @@ section div.image-1{
 }
 #pic.p4 {
   background-image: url(images/steel.jpg);
+  transform: rotate(90deg);
 }
 
 #pic.p5 {
@@ -343,7 +354,7 @@ section div.image-1{
     text-align: center;
 }
   
-   h2{
+   h3{
     
     margin-top: 0px;
     margin-bottom: 0px;
@@ -364,6 +375,7 @@ section div.image-1{
     text-align: center;
     height: 50vh;
     padding: 0;
+    border: none;
     
   }
 
@@ -371,12 +383,30 @@ section div.image-1{
 
     list-style-type: none;
     padding-left: 0px;
-    font-size: 25px;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 
+  ul li {
+
+    font-size: 20px;
+  }
+
+ul.artists{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase
+
+}
+
+ul.details{
+margin:0px;
+
+letter-spacing: 3px;
+font-weight: bold;
+text-transform: uppercase
+
+}
  div.topimage {
   /*position: absolute;
   
@@ -409,7 +439,8 @@ section div.image-1{
   
   a {
 
-    /*font-size: 46px;*/
+    color: deeppink;
+    text-decoration-color: darkblue;
   }
   /* body {
     font-size: 16px;
